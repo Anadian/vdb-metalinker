@@ -1,0 +1,121 @@
+{
+  "name": "vdb-metalinker",
+  "version": "0.0.2",
+  "description": "A bot for sharing information between the internet's many videogame databases.",
+  "main": "source/main.js",
+  "scripts": {
+    "test": "ava -v source/main.test.js",
+	"lint": "eslint source/main.js",
+	"update-travis-config": "json2yaml --preserve-key-order ci/travis.json .travis.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anadian/vdb-metalinker.git"
+  },
+  "keywords": [
+    "videogame",
+    "database",
+    "api",
+    "bot",
+    "linker",
+    "pcgamingwiki",
+    "gamefaqs",
+    "wikidata",
+    "http",
+    "free",
+    "libre",
+    "open",
+    "mit"
+  ],
+  "author": "Anadian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Anadian/vdb-metalinker/issues"
+  },
+  "homepage": "https://github.com/Anadian/vdb-metalinker#readme",
+  "devDependencies": {
+    "ava": "^3.9.0",
+    "coveralls": "^3.1.0",
+    "eslint": "^7.3.0",
+    "nyc": "^15.1.0",
+    "standard-version": "^8.0.0"
+  },
+  "dependencies": {
+    "application-log-winston-interface": "^1.0.5",
+    "axios": "^0.19.2",
+    "command-line-args": "^5.1.1",
+    "command-line-usage": "^6.1.0",
+    "env-paths": "^2.2.0",
+    "get-stream": "^5.1.0",
+    "make-dir": "^3.1.0"
+  },
+  "bin": {
+	  "vdb-metalinker": "source/main.js"
+  },
+  "eslintConfig": {
+    "env": {
+      "commonjs": true,
+      "es6": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+      "ecmaVersion": 11
+    },
+    "rules": {
+      "no-unused-vars": [
+        "warn"
+      ],
+      "no-useless-escape": "off",
+      "no-empty": "warn"
+    }
+  },
+  "standard-version": {
+    "types": [
+      {
+        "type": "feat",
+        "section": "Features",
+        "hidden": false
+      },
+      {
+        "type": "fix",
+        "section": "Bug Fixes",
+        "hidden": false
+      },
+      {
+        "type": "chore",
+        "section": "Chores",
+        "hidden": false
+      },
+      {
+        "type": "docs",
+        "section": "Documentation",
+        "hidden": false
+      },
+      {
+        "type": "style",
+        "section": "Code Style",
+        "hidden": false
+      },
+      {
+        "type": "refactor",
+        "section": "Refactoring",
+        "hidden": false
+      },
+      {
+        "type": "perf",
+        "section": "Performance",
+        "hidden": false
+      },
+      {
+        "type": "test",
+        "section": "Tests",
+        "hidden": false
+      }
+    ]
+  }
+}
