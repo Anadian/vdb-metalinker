@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "application-log-winston-interface": "^1.0.5",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "command-line-args": "^5.1.1",
     "command-line-usage": "^6.1.0",
     "env-paths": "^2.2.0",
